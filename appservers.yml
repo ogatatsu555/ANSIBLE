@@ -1,0 +1,16 @@
+- hosts: appservers
+  gather_facts: no
+  become: yes
+  become_user: root
+  roles:
+#    - tomcat_jm1
+#    - tomcat_jm2
+#    - tomcat_pos1
+#    - tomcat_pos2
+#    - tomcat_cct1
+#    - tomcat_cct2
+#    - tomcat9_pos1
+#    - tomcat9_pos2
+    - tomcat7_pos1
+    - tomcat7_pos2
+

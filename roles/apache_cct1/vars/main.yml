@@ -1,0 +1,6 @@
+Server_Root: httpd_cct1
+Listen_Http: 11001
+Listen_Https: 11101
+Tomcat_Addr: localhost
+Tomcat_Port: 21001
+

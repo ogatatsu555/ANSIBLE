@@ -1,0 +1,17 @@
+- hosts: webservers
+  gather_facts: no
+  become: yes
+  become_user: root
+  roles:
+#    - apache_jm1
+#    - apache_jm2
+#    - apache_pos1
+#    - apache_pos2
+#    - apache_cct1
+#    - apache_cct2
+#    - apache2.4_pos1
+#    - apache2.4_pos2
+    - apache2.2_pos1
+    - apache2.2_pos2
+#    - apache_web_tepco
+

@@ -1,0 +1,111 @@
+- name: Apache Home
+　copy:
+　　src: /opt/apache2.4/apache_base/
+　　dest: /etc/{{ Server_Root }}
+
+- name: Apache Log Directory
+　file:
+　　path: /var/log/{{ Server_Root }}
+　　state: directory
+　　owner: root
+　　group: root
+　　mode: 0700
+
+- name: Apache Log
+　file:
+　　src: /var/log/{{ Server_Root }}
+　　dest: /etc/{{ Server_Root }}/logs
+　　state: link
+
+- name: Apache Modules
+　file:
+　　src: /opt/apache2.4/modules
+　　dest: /etc/{{ Server_Root }}/modules
+　　state: link
+
+- name: Apache httpd.conf
+　template:
+　　src: httpd.conf
+　　dest: /etc/{{ Server_Root }}/conf
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+
+- name: Apache httpd-ssl.conf
+　template:
+　　src: httpd-ssl.conf
+　　dest: /etc/{{ Server_Root }}/conf/extra
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+
+- name: Apache httpd-mpm.conf
+　template:
+　　src: httpd-mpm.conf
+　　dest: /etc/{{ Server_Root }}/conf/extra
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+
+- name: Apache httpd-info.conf
+　template:
+　　src: httpd-info.conf
+　　dest: /etc/{{ Server_Root }}/conf/extra
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+
+- name: apchectl
+　template:
+　　src: apachectl
+　　dest: /etc/{{ Server_Root }}/bin
+　　owner: root
+　　group: root
+　　mode: 0755
+　　backup: no
+
+- name: service
+　template:
+　　src: httpd_base.service
+　　dest: /etc/systemd/system/{{ Server_Root }}.service
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+
+- name: service deploy
+　shell: systemctl daemon-reload
+
+- name: Apache Restart
+　service:
+　　name: "{{ Server_Root }}"
+　　enabled: yes
+　　state: restarted
+
+- name: HTTP firewalld
+　firewalld:
+　　port: "{{ Listen_Http }}/tcp"
+　　permanent: yes
+　　state: enabled
+　　immediate: yes
+
+- name: HTTPS firewalld
+　firewalld:
+　　port: "{{ Listen_Https }}/tcp"
+　　permanent: yes
+　　state: enabled
+　　immediate: yes
+
+- name: HC.html
+　template:
+　　src: HC.html
+　　dest: /etc/{{ Server_Root }}/docs
+　　owner: root
+　　group: root
+　　mode: 0644
+　　backup: no
+

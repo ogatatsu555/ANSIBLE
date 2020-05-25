@@ -1,0 +1,90 @@
+#- name: CATALINA_BASE
+#  copy:
+#    src: /opt/tomcat7/tomcat_base/
+#    dest: /etc/{{ Server_Root }}
+#    owner: tomcat
+#    group: tomcat
+#    mode: 0755
+
+- name: Tomcat Log Directory
+  file:
+    path: /var/log/{{ Server_Root }}/gc/gc_old
+    state: directory
+    owner: tomcat
+    group: tomcat
+    mode: 0700
+
+- name: Tomcat Log
+  file:
+    src: /var/log/{{ Server_Root }}
+    dest: /etc/{{ Server_Root }}/logs
+    state: link
+
+- name: Tomcat server.xml
+  template:
+    src: server.xml
+    dest: /etc/{{ Server_Root }}/conf
+    owner: tomcat
+    group: tomcat
+    mode: 0644
+    backup: no
+
+- name: Tomcat logging.properties
+  template:
+    src: logging.properties
+    dest: /etc/{{ Server_Root }}/conf
+    owner: tomcat
+    group: tomcat
+    mode: 0644
+    backup: no
+
+- name: catalina.sh
+  template:
+    src: catalina.sh
+    dest: /etc/{{ Server_Root }}/bin
+    owner: tomcat
+    group: tomcat
+    mode: 0755
+    backup: no
+
+- name: service
+  template:
+    src: tomcat_base.service
+    dest: /etc/systemd/system/{{ Server_Root }}.service
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: service deploy
+  shell: systemctl daemon-reload
+
+- name: Tomcat Restart
+  service:
+    name: "{{ Server_Root }}"
+    enabled: yes
+    state: restarted
+
+- name: AJP firewalld
+  firewalld:
+    port: "{{ Listen_Ajp }}/tcp"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: HTTP firewalld
+  firewalld:
+    port: "{{ Listen_Http }}/tcp"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: HC.html
+  template:
+    src: HC.html
+    dest: /etc/{{ Server_Root }}/webapps/ROOT
+    owner: tomcat
+    group: tomcat
+    mode: 0644
+    backup: no
+
