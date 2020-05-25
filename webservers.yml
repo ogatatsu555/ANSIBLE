@@ -11,7 +11,7 @@
 #    - apache_cct2
 #    - apache2.4_pos1
 #    - apache2.4_pos2
-    - apache2.2_pos1
-    - apache2.2_pos2
-#    - apache_web_tepco
+#    - apache2.2_pos1
+#    - apache2.2_pos2
+    - apache_web_tepco
 

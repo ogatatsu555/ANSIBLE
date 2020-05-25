@@ -1,0 +1,9 @@
+Server_Root: web/tomcat/tepco
+Listen_Ajp: 28001
+Listen_Http: 38001
+Listen_Shutdown: 48001
+Host_Name: localhost
+Listen_Jmx: 8761
+Service_Name: tomcat_web_tepco
+Instance_Name: kameiten_web_tepco
+

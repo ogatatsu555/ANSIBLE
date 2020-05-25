@@ -11,6 +11,7 @@
 #    - tomcat_cct2
 #    - tomcat9_pos1
 #    - tomcat9_pos2
-    - tomcat7_pos1
-    - tomcat7_pos2
+#    - tomcat7_pos1
+#    - tomcat7_pos2
+    - tomcat_web_tepco
 
