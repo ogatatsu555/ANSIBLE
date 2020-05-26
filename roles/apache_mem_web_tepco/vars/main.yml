@@ -1,0 +1,8 @@
+Server_Root: mem_web/apache/tepco
+Listen_Http: 19001
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29001
+Server_Name: t-tepco.cardnet.co.jp
+Service_Name: httpd_mem_web_tepco
+Ap_Name: KAIINWeb
+

@@ -1,0 +1,8 @@
+Server_Root: mem_web/apache/tohoku
+Listen_Http: 19003
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29003
+Server_Name: t-tohoku.cardnet.co.jp
+Service_Name: httpd_mem_web_tohoku
+Ap_Name: KAIINWeb
+

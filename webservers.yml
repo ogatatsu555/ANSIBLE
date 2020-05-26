@@ -13,5 +13,8 @@
 #    - apache2.4_pos2
 #    - apache2.2_pos1
 #    - apache2.2_pos2
-    - apache_web_tepco
+#    - apache_web_tepco
+#    - apache_web_tohoku
+#    - apache_mem_web_tepco
+    - apache_mem_web_tohoku
 

@@ -1,0 +1,9 @@
+Server_Root: web/tomcat/tohoku
+Listen_Ajp: 28003
+Listen_Http: 38003
+Listen_Shutdown: 48003
+Host_Name: localhost
+Listen_Jmx: 8763
+Service_Name: tomcat_web_tohoku
+Instance_Name: kameiten_web_tohoku
+
