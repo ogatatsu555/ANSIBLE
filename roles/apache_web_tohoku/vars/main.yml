@@ -2,7 +2,7 @@ Server_Root: web/apache/tohoku
 Listen_Http: 18003
 Tomcat_Addr: 127.0.0.1
 Tomcat_Port: 28003
-Server_Name: authori.tohoku-epco.co.jp:18003
+Server_Name: authori.tohoku-epco.co.jp
 Service_Name: httpd_web_tohoku
 Ap_Name: TOHOKU-EPCOWeb
 

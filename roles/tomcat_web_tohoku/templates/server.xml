@@ -70,6 +70,7 @@
                address="${tomcat.bind.address}"
                port="{{ Listen_Http }}"
                protocol="HTTP/1.1"
+               connectionTimeout="20000"
                redirectPort="8443"
     />
     <!-- A "Connector" using the shared thread pool-->
