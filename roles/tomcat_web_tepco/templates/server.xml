@@ -123,11 +123,11 @@
          address="${tomcat.bind.address}"
          port="{{ Listen_Ajp }}"
          protocol="AJP/1.3"
-         redirectPort="8443"
-         secure="true"
          maxThreads="256"
-         maxPostSize="1048576"
          connectionTimeout="298000"
+         secure="true"
+         redirectPort="8443"
+         maxPostSize="1048576"
     />
 
 
