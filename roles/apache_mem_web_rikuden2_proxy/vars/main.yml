@@ -1,0 +1,5 @@
+Server_Root: mem_web/apache/rikuden2_proxy
+Listen_Http: 17006
+Server_Name: t-rikuden2-p.cardnet.co.jp
+Service_Name: httpd_mem_web_rikuden2_proxy
+

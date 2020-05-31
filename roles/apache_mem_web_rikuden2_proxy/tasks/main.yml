@@ -1,0 +1,149 @@
+#- name: Apache Home
+#  copy:
+#    src: /opt/apache2.4_prefork/apache_base/
+#    dest: /app/{{ Server_Root }}
+
+- name: Apache Log Directory
+  file:
+    path: /var/applog/{{ Server_Root }}
+    state: directory
+    owner: root
+    group: root
+    mode: 0700
+
+- name: Apache Log
+  file:
+    src: /var/applog/{{ Server_Root }}
+    dest: /app/{{ Server_Root }}/logs
+    state: link
+
+- name: Apache Modules
+  file:
+    src: /opt/apache2.4_prefork/modules
+    dest: /app/{{ Server_Root }}/modules
+    state: link
+
+- name: Apache httpd.conf
+  template:
+    src: httpd.conf
+    dest: /app/{{ Server_Root }}/conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-mpm.conf
+  template:
+    src: httpd-mpm.conf
+    dest: /app/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-multilang-errordoc.conf
+  template:
+    src: httpd-multilang-errordoc.conf
+    dest: /app/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-info.conf
+  template:
+    src: httpd-info.conf
+    dest: /app/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-default.conf
+  template:
+    src: httpd-default.conf
+    dest: /app/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+#- name: Apache httpd-security.conf
+#  template:
+#    src: httpd-security.conf
+#    dest: /app/{{ Server_Root }}/conf/extra
+#    owner: root
+#    group: root
+#    mode: 0644
+#    backup: no
+
+- name: apchectl
+  template:
+    src: apachectl
+    dest: /app/{{ Server_Root }}/bin
+    owner: root
+    group: root
+    mode: 0755
+    backup: no
+
+- name: service
+  template:
+    src: httpd_base.service
+    dest: /etc/systemd/system/{{ Service_Name }}.service
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: service deploy
+  shell: systemctl daemon-reload
+
+- name: Apache Restart
+  service:
+    name: "{{ Service_Name }}"
+    enabled: yes
+    state: restarted
+
+- name: HTTP firewalld
+  firewalld:
+    port: "{{ Listen_Http }}/tcp"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: index.html
+  template:
+    src: index.html
+    dest: /app/{{ Server_Root }}/docs
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: ErrorPage(404)
+  copy:
+    src: 404.html
+    dest: /app/{{ Server_Root }}/error
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: ErrorPage(500)
+  copy:
+    src: 500.html
+    dest: /app/{{ Server_Root }}/error
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: StopGif
+  copy:
+    src: stop.gif
+    dest: /app/{{ Server_Root }}/error
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+

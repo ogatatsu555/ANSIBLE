@@ -16,5 +16,6 @@
 #    - apache_web_tepco
 #    - apache_web_tohoku
 #    - apache_mem_web_tepco
-    - apache_mem_web_tohoku
+#    - apache_mem_web_tohoku
+    - apache_mem_web_rikuden2_proxy
 
