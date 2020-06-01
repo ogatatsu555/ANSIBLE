@@ -1,0 +1,210 @@
+#- name: Apache Home
+#  copy:
+#    src: /opt/apache2.4/apache_base/
+#    dest: /etc/{{ Server_Root }}
+
+- name: Apache Log Directory
+  file:
+    path: /var/log/{{ Server_Root }}
+    state: directory
+    owner: root
+    group: root
+    mode: 0700
+
+- name: Apache Log
+  file:
+    src: /var/log/{{ Server_Root }}
+    dest: /etc/{{ Server_Root }}/logs
+    state: link
+
+- name: Apache Modules
+  file:
+    src: /opt/apache2.4/modules
+    dest: /etc/{{ Server_Root }}/modules
+    state: link
+
+- name: Apache httpd.conf
+  template:
+    src: httpd.conf
+    dest: /etc/{{ Server_Root }}/conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-mpm.conf
+  template:
+    src: httpd-mpm.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-multilang-errordoc.conf
+  template:
+    src: httpd-multilang-errordoc.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-autoindex.conf
+  template:
+    src: httpd-autoindex.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-languages.conf
+  template:
+    src: httpd-languages.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-info.conf
+  template:
+    src: httpd-info.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-default.conf
+  template:
+    src: httpd-default.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-jk.conf
+  template:
+    src: httpd-jk.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache workers.properties
+  template:
+    src: workers.properties
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache uriworkermap.properties
+  template:
+    src: uriworkermap.properties
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-security.conf
+  template:
+    src: httpd-security.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: Apache httpd-ssl.conf
+  template:
+    src: httpd-ssl.conf
+    dest: /etc/{{ Server_Root }}/conf/extra
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: apchectl
+  template:
+    src: apachectl
+    dest: /etc/{{ Server_Root }}/bin
+    owner: root
+    group: root
+    mode: 0755
+    backup: no
+
+- name: service
+  template:
+    src: httpd_base.service
+    dest: /etc/systemd/system/{{ Server_Root }}.service
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: service deploy
+  shell: systemctl daemon-reload
+
+- name: Apache Restart
+  service:
+    name: "{{ Server_Root }}"
+    enabled: yes
+    state: restarted
+
+- name: HTTP firewalld
+  firewalld:
+    port: "{{ Listen_Http }}/tcp"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: HTTPS firewalld
+  firewalld:
+    port: "{{ Listen_Https }}/tcp"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: HC.html
+  template:
+    src: HC.html
+    dest: /etc/{{ Server_Root }}/docs
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: StyleSheet
+  copy:
+    src: JS_common.css
+    dest: /etc/{{ Server_Root }}/docs/css/common.css
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: MaintePage
+  copy:
+    src: JS_mainte.html
+    dest: /etc/{{ Server_Root }}/docs/mainte.html
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
+- name: CardnetLogo
+  copy:
+    src: cardnet_logo.gif
+    dest: /etc/{{ Server_Root }}/docs/images
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+    

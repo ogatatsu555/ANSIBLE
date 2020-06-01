@@ -1,0 +1,7 @@
+Server_Root: tomcat_cct3
+Listen_Ajp: 21003
+Listen_Http: 22003
+Listen_Shutdown: 23003
+Host_Name: localhost
+Listen_Jmx: 8763
+
