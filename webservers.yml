@@ -4,7 +4,7 @@
   become_user: root
   roles:
 #    - apache_jm1
-#    - apache_jm2
+    - apache_jm2
 #    - apache_pos1
 #    - apache_pos2
 #    - apache_cct1
@@ -17,5 +17,5 @@
 #    - apache_web_tohoku
 #    - apache_mem_web_tepco
 #    - apache_mem_web_tohoku
-    - apache_mem_web_rikuden2_proxy
+#    - apache_mem_web_rikuden2_proxy
 
