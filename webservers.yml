@@ -7,9 +7,10 @@
 #    - apache_jm2
 #    - apache_jm3
 #    - apache_jm4
-    - apache_jm5
+#    - apache_jm5
 #    - apache_pos1
 #    - apache_pos2
+    - apache_pos3
 #    - apache_cct1
 #    - apache_cct2
 #    - apache2.4_pos1

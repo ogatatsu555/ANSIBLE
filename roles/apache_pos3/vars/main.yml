@@ -1,0 +1,6 @@
+Server_Root: httpd_pos3
+Listen_Http: 38080
+Listen_Https: 38443
+Tomcat_Addr: localhost
+Tomcat_Port: 38109
+

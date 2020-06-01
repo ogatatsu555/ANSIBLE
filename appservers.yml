@@ -7,9 +7,10 @@
 #    - tomcat_jm2
 #    - tomcat_jm3
 #    - tomcat_jm4
-    - tomcat_jm5
+#    - tomcat_jm5
 #    - tomcat_pos1
 #    - tomcat_pos2
+    - tomcat_pos3
 #    - tomcat_cct1
 #    - tomcat_cct2
 #    - tomcat9_pos1

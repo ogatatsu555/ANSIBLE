@@ -1,0 +1,7 @@
+Server_Root: tomcat_pos3
+Listen_Ajp: 38109
+Listen_Http: 38180
+Listen_Shutdown: 38105
+Host_Name: localhost
+Listen_Jmx: 8763
+
