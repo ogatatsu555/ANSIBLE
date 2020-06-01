@@ -4,7 +4,10 @@
   become_user: root
   roles:
 #    - apache_jm1
-    - apache_jm2
+#    - apache_jm2
+#    - apache_jm3
+#    - apache_jm4
+    - apache_jm5
 #    - apache_pos1
 #    - apache_pos2
 #    - apache_cct1

@@ -1,0 +1,7 @@
+Server_Root: tomcat_jm4
+Listen_Ajp: 48009
+Listen_Http: 48080
+Listen_Shutdown: 48005
+Host_Name: localhost
+Listen_Jmx: 8764
+

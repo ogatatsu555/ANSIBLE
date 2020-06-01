@@ -4,7 +4,10 @@
   become_user: root
   roles:
 #    - tomcat_jm1
-    - tomcat_jm2
+#    - tomcat_jm2
+#    - tomcat_jm3
+#    - tomcat_jm4
+    - tomcat_jm5
 #    - tomcat_pos1
 #    - tomcat_pos2
 #    - tomcat_cct1

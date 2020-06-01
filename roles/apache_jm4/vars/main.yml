@@ -1,0 +1,6 @@
+Server_Root: httpd_jm4
+Listen_Http: 4080
+Listen_Https: 4443
+Tomcat_Addr: localhost
+Tomcat_Port: 48009
+
