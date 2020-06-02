@@ -1,0 +1,9 @@
+Server_Root: mem_web/tomcat/chuden
+Listen_Ajp: 29008
+Listen_Http: 39008
+Listen_Shutdown: 49008
+Host_Name: localhost
+Listen_Jmx: 8768
+Service_Name: tomcat_mem_web_chuden
+Instance_Name: mem_web_chuden
+

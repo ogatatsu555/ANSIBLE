@@ -26,7 +26,11 @@
 #    - tomcat_web_rikuden2
 #    - tomcat_web_yonden
 #    - tomcat_web_chuden
-    - tomcat_web_kanri
+#    - tomcat_web_kanri
 #    - tomcat_mem_web_tepco
 #    - tomcat_mem_web_tohoku
+#    - tomcat_mem_web_energia
+#    - tomcat_mem_web_rikuden2
+#    - tomcat_mem_web_yonden
+    - tomcat_mem_web_chuden
 

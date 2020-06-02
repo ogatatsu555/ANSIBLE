@@ -1,0 +1,9 @@
+Server_Root: mem_web/tomcat/rikuden2
+Listen_Ajp: 29006
+Listen_Http: 39006
+Listen_Shutdown: 49006
+Host_Name: localhost
+Listen_Jmx: 8766
+Service_Name: tomcat_mem_web_rikuden2
+Instance_Name: mem_web_rikuden2
+

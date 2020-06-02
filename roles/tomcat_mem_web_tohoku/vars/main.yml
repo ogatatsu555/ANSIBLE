@@ -3,7 +3,7 @@ Listen_Ajp: 29003
 Listen_Http: 39003
 Listen_Shutdown: 49003
 Host_Name: localhost
-Listen_Jmx: 9763
+Listen_Jmx: 8763
 Service_Name: tomcat_mem_web_tohoku
 Instance_Name: mem_web_tohoku
 
