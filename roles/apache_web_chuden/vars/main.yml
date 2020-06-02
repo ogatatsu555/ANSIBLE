@@ -1,0 +1,8 @@
+Server_Root: web/apache/chuden
+Listen_Http: 18008
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28008
+Server_Name: t-chuden-koukyou.cardnet.co.jp
+Service_Name: httpd_web_chuden
+Ap_Name: CHUDENWeb
+

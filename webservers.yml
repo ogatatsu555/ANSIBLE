@@ -19,9 +19,14 @@
 #    - apache2.4_pos3
 #    - apache2.2_pos1
 #    - apache2.2_pos2
-    - apache2.2_pos3
+#    - apache2.2_pos3
 #    - apache_web_tepco
 #    - apache_web_tohoku
+#    - apache_web_energia
+#    - apache_web_rikuden2
+#    - apache_web_yonden
+#    - apache_web_chuden
+    - apache_web_kanri
 #    - apache_mem_web_tepco
 #    - apache_mem_web_tohoku
 #    - apache_mem_web_rikuden2_proxy

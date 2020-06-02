@@ -1,0 +1,9 @@
+Server_Root: web/tomcat/chuden
+Listen_Ajp: 28008
+Listen_Http: 38008
+Listen_Shutdown: 48008
+Host_Name: localhost
+Listen_Jmx: 8768
+Service_Name: tomcat_web_chuden
+Instance_Name: kameiten_web_chuden
+

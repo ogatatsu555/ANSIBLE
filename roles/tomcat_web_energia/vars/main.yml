@@ -1,0 +1,9 @@
+Server_Root: web/tomcat/energia
+Listen_Ajp: 28005
+Listen_Http: 38005
+Listen_Shutdown: 48005
+Host_Name: localhost
+Listen_Jmx: 8765
+Service_Name: tomcat_web_energia
+Instance_Name: kameiten_web_energia
+

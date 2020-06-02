@@ -19,9 +19,14 @@
 #    - tomcat9_pos3
 #    - tomcat7_pos1
 #    - tomcat7_pos2
-    - tomcat7_pos3
+#    - tomcat7_pos3
 #    - tomcat_web_tepco
 #    - tomcat_web_tohoku
+#    - tomcat_web_energia
+#    - tomcat_web_rikuden2
+#    - tomcat_web_yonden
+#    - tomcat_web_chuden
+    - tomcat_web_kanri
 #    - tomcat_mem_web_tepco
 #    - tomcat_mem_web_tohoku
 
