@@ -1,0 +1,8 @@
+Server_Root: mem_web_02/apache/rikuden2
+Listen_Http: 19106
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29106
+Server_Name: t-rikuden202.cardnet.co.jp
+Service_Name: httpd_mem_web_02_rikuden2
+Ap_Name: KAIINWeb
+

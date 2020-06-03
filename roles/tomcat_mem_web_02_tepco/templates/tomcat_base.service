@@ -1,0 +1,15 @@
+[Unit]
+Description=Apache Tomcat Web Application Container {{ Service_Name }}
+After=syslog.target network.target
+
+[Service]
+User=tomcat
+Group=tomcat
+Type=forking
+ExecStart=/app/{{ Server_Root }}/bin/catalina.sh start
+ExecStop=/app/{{ Server_Root }}/bin/catalina.sh stop
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+

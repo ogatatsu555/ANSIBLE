@@ -1,0 +1,9 @@
+Server_Root: mem_web_02/tomcat/energia
+Listen_Ajp: 29105
+Listen_Http: 39105
+Listen_Shutdown: 49105
+Host_Name: localhost
+Listen_Jmx: 8775
+Service_Name: tomcat_mem_web_02_energia
+Instance_Name: mem_web_02_energia
+

@@ -1,0 +1,8 @@
+Server_Root: mem_web_02/apache/energia
+Listen_Http: 19105
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29105
+Server_Name: t-energia02.cardnet.co.jp
+Service_Name: httpd_mem_web_02_energia
+Ap_Name: KAIINWeb
+

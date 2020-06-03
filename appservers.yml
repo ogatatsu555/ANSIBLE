@@ -42,10 +42,11 @@
 #    - tomcat_web_edu_rikuden2
 #    - tomcat_web_edu_yonden
 #    - tomcat_web_edu_chuden
-    - tomcat_web_edu_kanri
-#    - tomcat_mem_web_tepco
-#    - tomcat_mem_web_tohoku
-#    - tomcat_mem_web_energia
-#    - tomcat_mem_web_rikuden2
-#    - tomcat_mem_web_yonden
+#    - tomcat_web_edu_kanri
+#    - tomcat_mem_web_02_tepco
+#    - tomcat_mem_web_02_tohoku
+#    - tomcat_mem_web_02_energia
+#    - tomcat_mem_web_02_rikuden2
+#    - tomcat_mem_web_02_yonden
+    - tomcat_mem_web_02_chuden
 

@@ -1,0 +1,9 @@
+Server_Root: mem_web_02/tomcat/tohoku
+Listen_Ajp: 29103
+Listen_Http: 39103
+Listen_Shutdown: 49103
+Host_Name: localhost
+Listen_Jmx: 8773
+Service_Name: tomcat_mem_web_02_tohoku
+Instance_Name: mem_web_02_tohoku
+

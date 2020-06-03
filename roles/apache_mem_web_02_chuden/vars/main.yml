@@ -1,0 +1,8 @@
+Server_Root: mem_web_02/apache/chuden
+Listen_Http: 19108
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29108
+Server_Name: t-chuden02.cardnet.co.jp
+Service_Name: httpd_mem_web_02_chuden
+Ap_Name: KAIINWeb
+

@@ -42,13 +42,13 @@
 #    - apache_web_edu_rikuden2
 #    - apache_web_edu_yonden
 #    - apache_web_edu_chuden
-    - apache_web_edu_kanri
-#    - apache_mem_web_tepco
-#    - apache_mem_web_tohoku
-#    - apache_mem_web_energia
-#    - apache_mem_web_rikuden2
-#    - apache_mem_web_yonden
-
+#    - apache_web_edu_kanri
+#    - apache_mem_web_02_tepco
+#    - apache_mem_web_02_tohoku
+#    - apache_mem_web_02_energia
+#    - apache_mem_web_02_rikuden2
+#    - apache_mem_web_02_yonden
+    - apache_mem_web_02_chuden
 
 
 
