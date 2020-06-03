@@ -1,0 +1,8 @@
+Server_Root: web_edu/apache/chuden
+Listen_Http: 18108
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28108
+Server_Name: e-chuden-koukyou.cardnet.co.jp
+Service_Name: httpd_web_edu_chuden
+Ap_Name: CHUDENWeb
+

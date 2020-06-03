@@ -1,0 +1,8 @@
+Server_Root: web_edu/apache/rikuden2
+Listen_Http: 18106
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28106
+Server_Name: e-rikuden2-koukyou.cardnet.co.jp
+Service_Name: httpd_web_edu_rikuden2
+Ap_Name: RIKUDEN2Web
+

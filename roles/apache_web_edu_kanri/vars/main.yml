@@ -1,0 +1,8 @@
+Server_Root: web_edu/apache/kanri
+Listen_Http: 18104
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28104
+Server_Name: kanri-koukyou.cardnet.co.jp
+Service_Name: httpd_web_edu_kanri
+Ap_Name: KANRIWeb
+

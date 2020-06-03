@@ -20,6 +20,9 @@
 #    - apache2.2_pos1
 #    - apache2.2_pos2
 #    - apache2.2_pos3
+
+
+
 #    - apache_web_tepco
 #    - apache_web_tohoku
 #    - apache_web_energia
@@ -32,6 +35,22 @@
 #    - apache_mem_web_energia
 #    - apache_mem_web_rikuden2
 #    - apache_mem_web_yonden
-    - apache_mem_web_chuden
+#    - apache_mem_web_chuden
+#    - apache_web_edu_tepco
+#    - apache_web_edu_tohoku
+#    - apache_web_edu_energia
+#    - apache_web_edu_rikuden2
+#    - apache_web_edu_yonden
+#    - apache_web_edu_chuden
+    - apache_web_edu_kanri
+#    - apache_mem_web_tepco
+#    - apache_mem_web_tohoku
+#    - apache_mem_web_energia
+#    - apache_mem_web_rikuden2
+#    - apache_mem_web_yonden
+
+
+
+
 #    - apache_mem_web_rikuden2_proxy
 

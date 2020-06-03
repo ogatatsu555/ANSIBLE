@@ -1,0 +1,9 @@
+Server_Root: web_edu/tomcat/tepco
+Listen_Ajp: 28101
+Listen_Http: 38101
+Listen_Shutdown: 48101
+Host_Name: localhost
+Listen_Jmx: 8771
+Service_Name: tomcat_web_edu_tepco
+Instance_Name: kameiten_web_edu_tepco
+

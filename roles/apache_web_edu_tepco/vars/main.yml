@@ -1,0 +1,8 @@
+Server_Root: web_edu/apache/tepco
+Listen_Http: 18101
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28101
+Server_Name: authoritr.tepco.co.jp
+Service_Name: httpd_web_edu_tepco
+Ap_Name: TEPCOWeb
+

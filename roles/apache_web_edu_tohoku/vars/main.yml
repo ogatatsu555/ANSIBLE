@@ -1,0 +1,8 @@
+Server_Root: web_edu/apache/tohoku
+Listen_Http: 18103
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28103
+Server_Name: authoriedu.tohoku-epco.co.jp
+Service_Name: httpd_web_edu_tohoku
+Ap_Name: TOHOKU-EPCOWeb
+
