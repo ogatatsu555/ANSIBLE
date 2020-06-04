@@ -61,5 +61,8 @@
 #    - tomcat_mem_web_test_energia
 #    - tomcat_mem_web_test_rikuden2
 #    - tomcat_mem_web_test_yonden
-    - tomcat_mem_web_test_chuden
+#    - tomcat_mem_web_test_chuden
+
+#    - tomcat_web_demo
+    - tomcat_mem_web_demo
 

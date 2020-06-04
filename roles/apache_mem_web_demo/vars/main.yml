@@ -1,0 +1,8 @@
+Server_Root: mem_web_demo/apache/kaiin
+Listen_Http: 19901
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 29901
+Server_Name: d-kaiin-koukyou.cardnet.co.jp
+Service_Name: httpd_mem_web_demo
+Ap_Name: KAIINWeb
+

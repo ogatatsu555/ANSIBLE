@@ -61,7 +61,10 @@
 #    - apache_mem_web_test_energia
 #    - apache_mem_web_test_rikuden2
 #    - apache_mem_web_test_yonden
-    - apache_mem_web_test_chuden
+#    - apache_mem_web_test_chuden
+
+#    - apache_web_demo
+    - apache_mem_web_demo
 
 
 

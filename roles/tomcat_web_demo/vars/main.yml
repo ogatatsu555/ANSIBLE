@@ -1,0 +1,9 @@
+Server_Root: web_demo/tomcat/kameiten
+Listen_Ajp: 28901
+Listen_Http: 38901
+Listen_Shutdown: 48901
+Host_Name: localhost
+Listen_Jmx: 8791
+Service_Name: tomcat_web_demo
+Instance_Name: web_demo_kameiten
+

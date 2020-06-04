@@ -1,0 +1,8 @@
+Server_Root: web_demo/apache/kameiten
+Listen_Http: 18901
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28901
+Server_Name: d-kameiten-koukyou.cardnet.co.jp
+Service_Name: httpd_web_demo
+Ap_Name: KAMEITENWeb
+
