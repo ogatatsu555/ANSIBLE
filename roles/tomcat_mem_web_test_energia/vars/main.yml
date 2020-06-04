@@ -1,0 +1,9 @@
+Server_Root: mem_web_test/tomcat/energia
+Listen_Ajp: 29205
+Listen_Http: 39205
+Listen_Shutdown: 49205
+Host_Name: localhost
+Listen_Jmx: 8785
+Service_Name: tomcat_mem_web_test_energia
+Instance_Name: mem_web_test_energia
+

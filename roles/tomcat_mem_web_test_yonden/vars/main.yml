@@ -1,0 +1,9 @@
+Server_Root: mem_web_test/tomcat/yonden
+Listen_Ajp: 29207
+Listen_Http: 39207
+Listen_Shutdown: 49207
+Host_Name: localhost
+Listen_Jmx: 8787
+Service_Name: tomcat_mem_web_test_yonden
+Instance_Name: mem_web_test_yonden
+

@@ -55,13 +55,13 @@
 #    - apache_web_test_rikuden2
 #    - apache_web_test_yonden
 #    - apache_web_test_chuden
-    - apache_web_test_kanri
-#    - apache_mem_web_02_tepco
-#    - apache_mem_web_02_tohoku
-#    - apache_mem_web_02_energia
-#    - apache_mem_web_02_rikuden2
-#    - apache_mem_web_02_yonden
-#    - apache_mem_web_02_chuden
+#    - apache_web_test_kanri
+#    - apache_mem_web_test_tepco
+#    - apache_mem_web_test_tohoku
+#    - apache_mem_web_test_energia
+#    - apache_mem_web_test_rikuden2
+#    - apache_mem_web_test_yonden
+    - apache_mem_web_test_chuden
 
 
 

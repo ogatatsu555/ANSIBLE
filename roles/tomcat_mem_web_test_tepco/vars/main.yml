@@ -1,0 +1,9 @@
+Server_Root: mem_web_test/tomcat/tepco
+Listen_Ajp: 29201
+Listen_Http: 39201
+Listen_Shutdown: 49201
+Host_Name: localhost
+Listen_Jmx: 8781
+Service_Name: tomcat_mem_web_test_tepco
+Instance_Name: mem_web_test_tepco
+
