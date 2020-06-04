@@ -1,0 +1,8 @@
+Server_Root: web_test/apache/tepco
+Listen_Http: 18201
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28201
+Server_Name: authori.tepco.co.jp
+Service_Name: httpd_web_test_tepco
+Ap_Name: TEPCOWeb
+

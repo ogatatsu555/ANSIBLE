@@ -1,0 +1,9 @@
+Server_Root: web_test/tomcat/kanri
+Listen_Ajp: 28204
+Listen_Http: 38204
+Listen_Shutdown: 48204
+Host_Name: localhost
+Listen_Jmx: 8784
+Service_Name: tomcat_web_test_kanri
+Instance_Name: kameiten_web_test_kanri
+

@@ -1,0 +1,8 @@
+Server_Root: web_test/apache/yonden
+Listen_Http: 18207
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28207
+Server_Name: s-yonden-koukyou.cardnet.co.jp
+Service_Name: httpd_web_test_yonden
+Ap_Name: YONDENWeb
+

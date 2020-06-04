@@ -1,0 +1,8 @@
+Server_Root: web_test/apache/rikuden2
+Listen_Http: 18206
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28206
+Server_Name: s-rikuden2-koukyou.cardnet.co.jp
+Service_Name: httpd_web_test_rikuden2
+Ap_Name: RIKUDEN2Web
+

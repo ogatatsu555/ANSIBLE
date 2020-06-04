@@ -1,0 +1,8 @@
+Server_Root: web_test/apache/kanri
+Listen_Http: 18204
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28204
+Server_Name: s-kanri-koukyou.cardnet.co.jp
+Service_Name: httpd_web_test_kanri
+Ap_Name: KANRIWeb
+

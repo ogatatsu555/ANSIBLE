@@ -1,0 +1,8 @@
+Server_Root: web_test/apache/tohoku
+Listen_Http: 18203
+Tomcat_Addr: 127.0.0.1
+Tomcat_Port: 28203
+Server_Name: authori.tohoku-epco.co.jp
+Service_Name: httpd_web_test_tohoku
+Ap_Name: TOHOKU-EPCOWeb
+

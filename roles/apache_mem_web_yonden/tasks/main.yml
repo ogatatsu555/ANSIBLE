@@ -174,3 +174,12 @@
     mode: 0644
     backup: no
 
+- name: robots.txt
+  copy:
+    src: robots.txt
+    dest: /app/{{ Server_Root }}/docs
+    owner: root
+    group: root
+    mode: 0644
+    backup: no
+
