@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   roles:
-#    - apache_jm1
+    - apache_jm1
 #    - apache_jm2
 #    - apache_jm3
 #    - apache_jm4
@@ -64,7 +64,7 @@
 #    - apache_mem_web_test_chuden
 
 #    - apache_web_demo
-    - apache_mem_web_demo
+#    - apache_mem_web_demo
 
 
 

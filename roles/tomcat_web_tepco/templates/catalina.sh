@@ -119,7 +119,7 @@ CATALINA_OPTS="${CATALINA_OPTS} -Xms768m -Xmx768m"
 CATALINA_OPTS="${CATALINA_OPTS} -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m"
 #CATALINA_OPTS="${CATALINA_OPTS} -XX:NewRatio=2 -XX:SurvivorRatio=8"
 CATALINA_OPTS="${CATALINA_OPTS} -XX:+UseG1GC"
-CATALINA_OPTS="${CATALINA_OPTS} -Xlog:gc*:file=/app/web/tomcat/tepco/logs/gc/gc-$(date '+%Y-%m-%d').log::filecount=10,filesize=0:time"
+CATALINA_OPTS="${CATALINA_OPTS} -Xlog:gc*=debug:/app/{{ Server_Root }}/logs/gc/gc-%t-%p.log:time,level,tags:filecount=10,filesize=0"
 CATALINA_OPTS="${CATALINA_OPTS} -Dtomcat.bind.address=0.0.0.0"
 CATALINA_OPTS="${CATALINA_OPTS} -D{{ Instance_Name }}"
 ##### JMX #####

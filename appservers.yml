@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   roles:
-#    - tomcat_jm1
+    - tomcat_jm1
 #    - tomcat_jm2
 #    - tomcat_jm3
 #    - tomcat_jm4
@@ -64,5 +64,5 @@
 #    - tomcat_mem_web_test_chuden
 
 #    - tomcat_web_demo
-    - tomcat_mem_web_demo
+#    - tomcat_mem_web_demo
 
