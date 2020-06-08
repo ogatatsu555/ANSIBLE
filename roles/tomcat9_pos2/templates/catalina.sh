@@ -117,7 +117,7 @@ CATALINA_OPTS="${CATALINA_OPTS} -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m
 #CATALINA_OPTS="${CATALINA_OPTS} -XX:NewRatio=2 -XX:SurvivorRatio=8"
 CATALINA_OPTS="${CATALINA_OPTS} -XX:+UseG1GC"
 CATALINA_OPTS="${CATALINA_OPTS} -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps"
-CATALINA_OPTS="${CATALINA_OPTS} -Xloggc:/etc/{{ Server_Root }}/logs/gc/gc-$(date '%Y-%m-%d').log"
+CATALINA_OPTS="${CATALINA_OPTS} -Xloggc:/etc/{{ Server_Root }}/logs/gc/gc-%t-%p.log"
 CATALINA_OPTS="${CATALINA_OPTS} -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=0"
 CATALINA_OPTS="${CATALINA_OPTS} -Dtomcat.bind.address=0.0.0.0"
 CATALINA_OPTS="${CATALINA_OPTS} -DjvmRoute={{ Host_Name }}"
