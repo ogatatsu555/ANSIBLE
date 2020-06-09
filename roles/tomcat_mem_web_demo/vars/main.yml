@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8791
 Service_Name: tomcat_mem_web_demo
 Instance_Name: mem_web_demo_kaiin
+Ap_Name: KAIINWeb
 

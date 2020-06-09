@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8778
 Service_Name: tomcat_mem_web_02_chuden
 Instance_Name: mem_web_02_chuden
+Ap_Name: KAIINWeb
 

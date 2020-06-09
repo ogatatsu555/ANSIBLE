@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8773
 Service_Name: tomcat_mem_web_02_tohoku
 Instance_Name: mem_web_02_tohoku
+Ap_Name: KAIINWeb
 

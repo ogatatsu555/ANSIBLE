@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8777
 Service_Name: tomcat_mem_web_02_yonden
 Instance_Name: mem_web_02_yonden
+Ap_Name: KAIINWeb
 

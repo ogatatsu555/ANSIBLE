@@ -17,7 +17,7 @@
 #    - tomcat9_pos1
 #    - tomcat9_pos2
 #    - tomcat9_pos3
-    - tomcat7_pos1
+#    - tomcat7_pos1
 #    - tomcat7_pos2
 #    - tomcat7_pos3
  
@@ -34,7 +34,7 @@
 #    - tomcat_mem_web_tohoku
 #    - tomcat_mem_web_energia
 #    - tomcat_mem_web_rikuden2
-#    - tomcat_mem_web_yonden
+    - tomcat_mem_web_yonden
 #    - tomcat_mem_web_chuden
 #    - tomcat_web_edu_tepco
 #    - tomcat_web_edu_tohoku
