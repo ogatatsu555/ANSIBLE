@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8763
 Service_Name: tomcat_web_tohoku
 Instance_Name: kameiten_web_tohoku
+Ap_Name: TOHOKU-EPCOWeb
 

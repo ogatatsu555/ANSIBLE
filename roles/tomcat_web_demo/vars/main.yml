@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8791
 Service_Name: tomcat_web_demo
 Instance_Name: web_demo_kameiten
+Ap_Name: KAMEITENWeb
 

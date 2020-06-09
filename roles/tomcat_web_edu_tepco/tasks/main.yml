@@ -88,3 +88,11 @@
     mode: 0644
     backup: no
 
+- name: AP Directory
+  file:
+    path: /app/{{ Server_Root }}/webapps/{{ Ap_Name }}
+    state: directory
+    owner: tomcat
+    group: tomcat
+    mode: 0755
+

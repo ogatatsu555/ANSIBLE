@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8777
 Service_Name: tomcat_web_edu_yonden
 Instance_Name: kameiten_web_edu_yonden
+Ap_Name: YONDENWeb
 

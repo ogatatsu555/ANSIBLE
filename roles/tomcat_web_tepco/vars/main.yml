@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8761
 Service_Name: tomcat_web_tepco
 Instance_Name: kameiten_web_tepco
+Ap_Name: TEPCOWeb
 

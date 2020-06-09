@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8788
 Service_Name: tomcat_web_test_chuden
 Instance_Name: kameiten_web_test_chuden
+Ap_Name: CHUDENWeb
 

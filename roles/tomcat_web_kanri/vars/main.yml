@@ -6,4 +6,5 @@ Host_Name: localhost
 Listen_Jmx: 8764
 Service_Name: tomcat_web_kanri
 Instance_Name: kameiten_web_kanri
+Ap_Name: KANRIWeb
 
