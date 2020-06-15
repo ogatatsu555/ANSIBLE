@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   roles:
-    - apache_jm1
+#    - apache_jm1
 #    - apache_jm2
 #    - apache_jm3
 #    - apache_jm4
@@ -23,39 +23,39 @@
 
 
 
-#    - apache_web_tepco
-#    - apache_web_tohoku
-#    - apache_web_energia
-#    - apache_web_rikuden2
-#    - apache_web_yonden
-#    - apache_web_chuden
-#    - apache_web_kanri
+    - apache_web_tepco
+    - apache_web_tohoku
+    - apache_web_energia
+    - apache_web_rikuden2
+    - apache_web_yonden
+    - apache_web_chuden
+    - apache_web_kanri
 #    - apache_mem_web_tepco
 #    - apache_mem_web_tohoku
 #    - apache_mem_web_energia
 #    - apache_mem_web_rikuden2
 #    - apache_mem_web_yonden
 #    - apache_mem_web_chuden
-#    - apache_web_edu_tepco
-#    - apache_web_edu_tohoku
-#    - apache_web_edu_energia
-#    - apache_web_edu_rikuden2
-#    - apache_web_edu_yonden
-#    - apache_web_edu_chuden
-#    - apache_web_edu_kanri
+    - apache_web_edu_tepco
+    - apache_web_edu_tohoku
+    - apache_web_edu_energia
+    - apache_web_edu_rikuden2
+    - apache_web_edu_yonden
+    - apache_web_edu_chuden
+    - apache_web_edu_kanri
 #    - apache_mem_web_02_tepco
 #    - apache_mem_web_02_tohoku
 #    - apache_mem_web_02_energia
 #    - apache_mem_web_02_rikuden2
 #    - apache_mem_web_02_yonden
 #    - apache_mem_web_02_chuden
-#    - apache_web_test_tepco
-#    - apache_web_test_tohoku
-#    - apache_web_test_energia
-#    - apache_web_test_rikuden2
-#    - apache_web_test_yonden
-#    - apache_web_test_chuden
-#    - apache_web_test_kanri
+    - apache_web_test_tepco
+    - apache_web_test_tohoku
+    - apache_web_test_energia
+    - apache_web_test_rikuden2
+    - apache_web_test_yonden
+    - apache_web_test_chuden
+    - apache_web_test_kanri
 #    - apache_mem_web_test_tepco
 #    - apache_mem_web_test_tohoku
 #    - apache_mem_web_test_energia
@@ -63,7 +63,7 @@
 #    - apache_mem_web_test_yonden
 #    - apache_mem_web_test_chuden
 
-#    - apache_web_demo
+    - apache_web_demo
 #    - apache_mem_web_demo
 
 

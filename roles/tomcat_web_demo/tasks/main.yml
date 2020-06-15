@@ -65,19 +65,19 @@
     enabled: yes
     state: restarted
 
-- name: AJP firewalld
-  firewalld:
-    port: "{{ Listen_Ajp }}/tcp"
-    permanent: yes
-    state: enabled
-    immediate: yes
+#- name: AJP firewalld
+#  firewalld:
+#    port: "{{ Listen_Ajp }}/tcp"
+#    permanent: yes
+#    state: enabled
+#    immediate: yes
 
-- name: HTTP firewalld
-  firewalld:
-    port: "{{ Listen_Http }}/tcp"
-    permanent: yes
-    state: enabled
-    immediate: yes
+#- name: HTTP firewalld
+#  firewalld:
+#    port: "{{ Listen_Http }}/tcp"
+#    permanent: yes
+#    state: enabled
+#    immediate: yes
 
 - name: HC.html
   template:

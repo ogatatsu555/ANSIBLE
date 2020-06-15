@@ -1,5 +1,5 @@
 ## -- INITIALIZERによる挿入 --
 # site.ymlはimport_playbookのみでシンプルに保ちます。
-#- import_playbook: webservers.yml
+- import_playbook: webservers.yml
 - import_playbook: appservers.yml
 ## -- INITIALIZERによる挿入 --
