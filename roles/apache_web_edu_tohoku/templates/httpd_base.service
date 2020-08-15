@@ -5,7 +5,7 @@ After=network.target remote-fs.target nss-lookup.target
 [Service]
 Type=forking
 ExecStart=/app/{{ Server_Root }}/bin/apachectl start
-ExecStop=/app//{{ Server_Root }}/bin/apachectl stop
+ExecStop=/app/{{ Server_Root }}/bin/apachectl stop
 
 [Install]
 WantedBy=multi-user.target

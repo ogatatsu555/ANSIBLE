@@ -114,7 +114,7 @@ CATALINA_BASE="/app/{{ Server_Root }}"
 CATALINA_PID="/app/{{ Server_Root }}/logs/tomcat.pid"
 CATALINA_TMPDIR="/app/{{ Server_Root }}/temp"
 CATALINA_OUT="/app/{{ Server_Root }}/logs/catalina.out"
-ATALINA_OPTS="${CATALINA_OPTS} -Dsun.nio.cs.map=Windows-31J/Shift_JIS,x-windows-iso2022jp/ISO-2022-JP"
+CATALINA_OPTS="${CATALINA_OPTS} -Dsun.nio.cs.map=Windows-31J/Shift_JIS,x-windows-iso2022jp/ISO-2022-JP"
 CATALINA_OPTS="${CATALINA_OPTS} -Xms768m -Xmx768m"
 CATALINA_OPTS="${CATALINA_OPTS} -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m"
 #CATALINA_OPTS="${CATALINA_OPTS} -XX:NewRatio=2 -XX:SurvivorRatio=8"
@@ -128,7 +128,7 @@ CATALINA_OPTS="${CATALINA_OPTS} -Dcom.sun.management.jmxremote.port={{ Listen_Jm
 CATALINA_OPTS="${CATALINA_OPTS} -Dcom.sun.management.jmxremote.ssl=false"
 CATALINA_OPTS="${CATALINA_OPTS} -Dcom.sun.management.jmxremote.authenticate=false"
 ##### jcmd <pid> GC.rotate_log #####
-mv -f /app/{{ Server_Root }}/logs/gc/* /app/{{ Server_Root }}/logs/gc/gc_old >/dev/null
+mv -f /app/{{ Server_Root }}/logs/gc/* /app/{{ Server_Root }}/logs/gc/gc_old >/dev/null 2>&1
 #####
 
 # OS specific support.  $var _must_ be set to either true or false.
